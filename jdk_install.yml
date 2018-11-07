@@ -16,6 +16,7 @@ wget -P /usr/java https://media.githubusercontent.com/media/a547804833/JDK/maste
 
 #解压jdk包到/usr/java
 echo -e  "${Info}解压jdk包到/usr/java"
+cd /usr/java
 tar -zxvf jdk-7u79-linux-x64.tar.gz -C /usr/java
 
 #追加jdk环境变量到/etc/profile
