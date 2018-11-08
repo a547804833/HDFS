@@ -91,7 +91,7 @@ echo -e  "${Info}设置/usr/hadoop/hadoop-2.8.5/etc/hadoop/yarn-env.sh环境变�
 cat <<EOF >>/usr/hadoop/hadoop-2.8.5/etc/hadoop/yarn-env.sh
 export JAVA_HOME=$java_pth
 EOF
-exit
+
 source /etc/profile
 #master节点设置免密登录，
 #原因：HDFS能做到在任何一个机器上敲命令启动HDFS,那么它就能启动所有节点的所有的Java进程(每个节点实际就是一个java 进程)，也就是启动整个集群,其实就是远程登录到其他机器上去启动那些节点.如 start-all.sh命令.它其实只是为了一个方便,不然需要逐个启 动节点.
@@ -299,8 +299,7 @@ cd /usr/hadoop/hadoop-2.8.5
 ./sbin/start-dfs.sh
 
 echo -e  "${Info}启动HDFS成功：访问IP:50070"
-echo -e  "${Info}请执行:source /etc/profile"
-echo -e  "${Info}请执行:hadoop fs  -chmod 777 /"
+echo -e  "${Info}请手动执行给予文件夹权限:source /etc/profile && hadoop fs  -chmod 777 /"
 }
 
 function Pseudo_Distributed_Mode(){
