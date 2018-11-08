@@ -12,6 +12,7 @@ echo -e  "${Info}在usr目录下新建java文件夹"
 mkdir -p /usr/java
 
 #下载jdk1.7到/usr/java
+echo -e  "${Info}下载jdk1.7到/usr/java"
 wget -P /usr/java https://media.githubusercontent.com/media/a547804833/JDK/master/jdk/jdk-7u79-linux-x64.tar.gz
 
 #解压jdk包到/usr/java
