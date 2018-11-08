@@ -12,7 +12,7 @@
 不支持32位系统
 # 安装教程
 
-wget https://github.com/xyzbeta/edoDMS/archive/master.zip && unzip master.zip && cd edoDMS-master && chmod u+x *.sh && ./edoDMS.sh
+wget https://github.com/a547804833/HDFS/archive/master.zip && unzip master.zip && cd HDFS-master && chmod u+x *.sh && ./hdfs.sh
 
 # 相关命令
 
