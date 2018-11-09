@@ -25,7 +25,7 @@ function Install_jdk(){
 
   #下载jdk1.7到/usr/java
   echo -e  "${Info}下载jdk1.7到/usr/java"
-  #wget -P /usr/java https://media.githubusercontent.com/media/a547804833/JDK/master/jdk/jdk-7u79-linux-x64.tar.gz
+  wget -P /usr/java https://media.githubusercontent.com/media/a547804833/JDK/master/jdk/jdk-7u79-linux-x64.tar.gz
 
   #解压jdk包到/usr/java
   echo -e  "${Info}解压jdk包到/usr/java"
@@ -61,7 +61,7 @@ function Local_Mode(){
 
   #下载hadoop2.8.5到/usr/hadoop
   echo -e  "${Info}下载hadoop2.8.5到/usr/hadoop" 
-  # wget -P /usr/hadoop http://mirror.bit.edu.cn/apache/hadoop/common/hadoop-2.8.5/hadoop-2.8.5.tar.gz
+  wget -P /usr/hadoop http://mirror.bit.edu.cn/apache/hadoop/common/hadoop-2.8.5/hadoop-2.8.5.tar.gz
 
   #解压hadoop2.8.5包到/usr/hadoop
   echo -e  "${Info}解压hadoop2.8.5包到/usr/hadoop"
